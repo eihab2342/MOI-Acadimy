@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="ar">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>بيانات الإخوة الاشقاء</title>
+    <link rel="stylesheet" href="MainStyle.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+    />
+  </head>
+  <body>
+    <!-- <div id="const_place"> </div> -->
+    <!-- start of img and nav -->
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        padding: 0;
+        margin: 0;
+        font-family: Arial, sans-serif;
+        direction: rtl;
+        background-size: cover;
+      }
+
+      .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #003366;
+        padding: 10px 20px;
+        color: white;
+      }
+
+      .navbar ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        align-items: center;
+      }
+
+      .navbar ul li {
+        margin-left: 20px;
+      }
+
+      .navbar ul li a {
+        text-decoration: none;
+        color: white;
+        font-size: 20px;
+      }
+      .navbar ul li a:hover {
+        color: #237cdb;
+      }
+
+      .navbar .profile {
+        display: flex;
+        align-items: center;
+      }
+
+      .navbar .profile p {
+        margin: 0;
+        font-size: 20px;
+        margin-right: 10px;
+      }
+
+      .navbar .profile button {
+        background-color: #007bff;
+        color: white;
+        border: none;
+        padding: 8px 12px;
+        cursor: pointer;
+        border-radius: 5px;
+        font-size: 18px;
+      }
+      .navbar .profile button:hover {
+        transition: 0.1s;
+        background-color: rgb(20, 74, 192);
+      }
+
+      .navbar .profile button i {
+        margin-left: 5px;
+      }
+
+      .navbar .home-icon {
+        font-size: 18px;
+        color: white;
+      }
+
+      .navbar .home-icon:hover {
+        color: #007bff;
+      }
+      .img {
+        margin: 0;
+        padding: 0;
+        text-align: left;
+      }
+
+      img {
+        /* width: auto; */
+        max-width: 100%;
+        display: block;
+        height: auto;
+        text-align: center;
+        /* display: flex; */
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+    <div class="navbar">
+      <ul>
+        <li>
+          <a href="#" class="home-icon"><i class="fas fa-home"></i></a>
+        </li>
+        <li><a href="main.html">بيانات الطالب</a></li>
+        <li><a href="#">نتائج الإختبارات</a></li>
+        <li><a href="#">بطاقة التردد</a></li>
+        <li><a href="#">وثيقة التعارف</a></li>
+      </ul>
+
+      <div class="profile">
+        <p>:</p>
+        <button>تسجيل الخروج <i class="fas fa-sign-out-alt"></i></button>
+      </div>
+    </div>
+    <div class="img">
+      <img src="uploads/MOI.main.png" alt="MOI Acadimy" />
+    </div>
+
+    <!-- End of img and nav -->
+    <div class="container">
+      <h2>أخ شقيق</h2>
+      <hr />
+      <form>
+        <div class="row">
+          <div class="input-group">
+            <label for="name">الاسم رباعي</label>
+            <input type="text" id="namee" placeholder="الاسم رباعي" />
+          </div>
+          <div class="input-group">
+            <label for="id-status">حالة الرقم القومي</label>
+            <select id="id-status">
+              <option value="متاح">الرقم القومي متاح</option>
+              <option value="غير متاح">غير متاح</option>
+            </select>
+          </div>
+          <div class="input-group">
+            <label for="national-id">الرقم القومي</label>
+            <input type="text" id="national-id" placeholder="الرقم القومي" />
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="input-group">
+            <label for="religion">الديانة</label>
+            <!-- <input type="text" id="religion" placeholder="غير محدد" /> -->
+            <select name="religion" id="religion">
+              <option value="select">-اختار الديانة-</option>
+              <option value="">مسلم</option>
+              <option value="">مسيحي</option>
+              <option value="">كاثوليكي</option>
+            </select>
+          </div>
+          <div class="input-group">
+            <label for="gender">الجنسية</label>
+            <select id="gender">
+              <option value="غير محدد">-إختار الجنسية-</option>
+              <option value="مصري">مصري</option>
+              <option value="غير مصري">غير مصري</option>
+            </select>
+          </div>
+          <div class="input-group">
+            <label for="birth-date">تاريخ الميلاد</label>
+            <input type="date" id="birth-date" />
+          </div>
+          <div class="input-group">
+            <label for="governorate"> محافظة الميلاد</label>
+            <select name="governorate" id="governorate">
+              <option value="">اختر المحافظة</option>
+              <option value="cairo">القاهرة</option>
+              <option value="giza">الجيزة</option>
+              <option value="alexandria">الإسكندرية</option>
+              <option value="aswan">أسوان</option>
+              <option value="assiut">أسيوط</option>
+              <option value="beheira">البحيرة</option>
+              <option value="beni-suef">بني سويف</option>
+              <option value="dakahlia">الدقهلية</option>
+              <option value="damietta">دمياط</option>
+              <option value="fayoum">الفيوم</option>
+              <option value="gharbia">الغربية</option>
+              <option value="ismailia">الإسماعيلية</option>
+              <option value="kafr-elsheikh">كفر الشيخ</option>
+              <option value="luxor">الأقصر</option>
+              <option value="matrouh">مطروح</option>
+              <option value="minya">المنيا</option>
+              <option value="monufia">المنوفية</option>
+              <option value="new-valley">الوادي الجديد</option>
+              <option value="north-sinai">شمال سيناء</option>
+              <option value="port-said">بورسعيد</option>
+              <option value="qalyubia">القليوبية</option>
+              <option value="qena">قنا</option>
+              <option value="red-sea">البحر الأحمر</option>
+              <option value="sharqia">الشرقية</option>
+              <option value="sohag">سوهاج</option>
+              <option value="south-sinai">جنوب سيناء</option>
+              <option value="suez">السويس</option>
+            </select>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-group">
+            <label for="">المدينة/مركز الميلاد</label>
+            <select id="city">
+              <option value="">-اختر المدينة-</option>
+            </select>
+          </div>
+          <div class="input-group">
+            <label for="">المؤهل الدراسي الحاصل علية</label>
+            <select name="" id="coualification">
+              <option value="select">اختار المؤهل.</option>
+              <option value="">بدون</option>
+              <option value="">مؤهل متوسط</option>
+              <option value="">مؤهل فوق متوسط</option>
+              <option value="">مؤهل عالي</option>
+            </select>
+          </div>
+          <div class="input-group">
+            <label for="">تفصيلي المؤهل</label>
+            <input type="text" />
+          </div>
+          <div class="input-group">
+            <label for="">الوظيفة</label>
+            <select name="" id="job">
+              <option value="select">-اختار الوظيفة-</option>
+              <option value="doctor">طبيب</option>
+              <option value="engineer">مهندس</option>
+              <option value="teacher">رجل تعليم</option>
+              <option value="religious-leader">رجل دين</option>
+              <option value="police-officer">ضابط شرطة</option>
+              <option value="military-personnel">فرد قوات مسلحة</option>
+              <option value="judge">رجل قضاء</option>
+              <option value="village-chief">عمدة بلد</option>
+              <option value="craftsman">حرفي</option>
+              <option value="freelancer">عامل حر</option>
+              <option value="public-sector">عامل بالقطاع العام</option>
+              ">
+            </select>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="input-group">
+            <label for="">تقصيلي الوظيفة</label>
+            <input type="text" />
+          </div>
+          <div class="input-group">
+            <label for="">الحالة الإجتماعية</label>
+            <select name="statue" id="statue">
+              <option value="">غير محدد</option>
+              <option value="">متزوج</option>
+              <option value="">اعزب</option>
+              <option value="">مطلق</option>
+              <option value="">أرمل</option>
+            </select>
+          </div>
+          <!-- فورم بيانات الزوج (مخفي في البداية) -->
+          <div id="spouse-form" style="display: none">
+            <h3>بيانات الزوج/الزوجة</h3>
+            <div class="input-group">
+              <label for="spouse-name">اسم الزوج/الزوجة</label>
+              <input
+                type="text"
+                id="spouse-name"
+                placeholder="اسم الزوج/الزوجة"
+              />
+            </div>
+            <div class="input-group">
+              <label for="spouse-national-id">الرقم القومي للزوج/الزوجة</label>
+              <input
+                type="text"
+                id="spouse-national-id"
+                placeholder="الرقم القومي للزوج/الزوجة"
+              />
+            </div>
+            <!-- يمكنك إضافة المزيد من الحقول حسب الحاجة -->
+          </div>
+          <div class="input-group">
+            <label for="">متوفي</label>
+            <input type="checkbox" name="died" id="died" />
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-group">
+            <label for="address">محل الإقامة تفصيلاً</label>
+            <p class="discription">
+              العنوان الحالي للإقامة(أو أخر عنوان في حالة الوفاة)
+            </p>
+            <input type="text" style="width: 400px" />
+          </div>
+          <div class="input-group" style="margin-top: 45px">
+            <label for="governorate"> المحافظة </label>
+            <select name="governorate" id="governorate">
+              <option value="">اختر المحافظة</option>
+              <option value="cairo">القاهرة</option>
+              <option value="giza">الجيزة</option>
+              <option value="alexandria">الإسكندرية</option>
+              <option value="aswan">أسوان</option>
+              <option value="assiut">أسيوط</option>
+              <option value="beheira">البحيرة</option>
+              <option value="beni-suef">بني سويف</option>
+              <option value="dakahlia">الدقهلية</option>
+              <option value="damietta">دمياط</option>
+              <option value="fayoum">الفيوم</option>
+              <option value="gharbia">الغربية</option>
+              <option value="ismailia">الإسماعيلية</option>
+              <option value="kafr-elsheikh">كفر الشيخ</option>
+              <option value="luxor">الأقصر</option>
+              <option value="matrouh">مطروح</option>
+              <option value="minya">المنيا</option>
+              <option value="monufia">المنوفية</option>
+              <option value="new-valley">الوادي الجديد</option>
+              <option value="north-sinai">شمال سيناء</option>
+              <option value="port-said">بورسعيد</option>
+              <option value="qalyubia">القليوبية</option>
+              <option value="qena">قنا</option>
+              <option value="red-sea">البحر الأحمر</option>
+              <option value="sharqia">الشرقية</option>
+              <option value="sohag">سوهاج</option>
+              <option value="south-sinai">جنوب سيناء</option>
+              <option value="suez">السويس</option>
+            </select>
+          </div>
+          <div class="input-group" style="margin-top: 45px">
+            <label for="">المدينة/مركز الإقامة</label>
+            <select id="city">
+              <option value="">-اختر المدينة-</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Add more input groups here as needed -->
+
+        <button type="submit">حفظ</button>
+      </form>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

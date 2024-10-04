@@ -1,0 +1,113 @@
+body {
+  direction: rtl;
+  margin: 0;
+  padding: 0;
+}
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+      }
+
+      .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #003366;
+        padding: 10px 20px;
+        color: white;
+      }
+
+      .navbar ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        align-items: center;
+      }
+
+      .navbar ul li {
+        margin-left: 20px;
+      }
+
+      .navbar ul li a {
+        text-decoration: none;
+        color: white;
+        font-size: 20px;
+      }
+      .navbar ul li a:hover{
+        color:#237cdb;
+      }
+
+      .navbar .profile {
+        display: flex;
+        align-items: center;
+      }
+
+      .navbar .profile p {
+        margin: 0;
+        font-size: 20px;
+        margin-right: 15px;
+      }
+
+      .navbar .profile button {
+        background-color: #007bff;
+        color: white;
+        border: none;
+        padding: 8px 12px;
+        cursor: pointer;
+        border-radius: 5px;
+        font-size: 18px;
+      }
+      .navbar .profile button:hover{
+        transition: 0.1s;
+        background-color: rgb(20, 74, 192);
+
+      }
+
+      .navbar .profile button i {
+        margin-left: 5px;
+      }
+
+      .navbar .home-icon {
+        font-size: 20px;
+        color: white;
+      }
+
+      .navbar .home-icon:hover {
+        color: #007bff;
+      }
+img {
+  max-width: 100%;
+  display: block;
+  margin-bottom: 40px;
+  height: auto;
+}
+
+.one {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+  background-color: rgb(196, 219, 219);
+  color: rgb(19, 87, 233);
+  border-radius: 5px;
+}
+
+h2 {
+  padding-right: 15px;
+}
+
+button {
+  left: 20px;
+  padding-left: 10px;
+  margin: 10px;
+  font-size: 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+button:hover {
+  transition: 0.1s;
+  background-color: rgb(20, 74, 192);
+}
